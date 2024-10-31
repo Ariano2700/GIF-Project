@@ -13,12 +13,11 @@ const AddCategory = ({ setCategory }) => {
     setError(false);
     setCategory(value);
     setValue("");
-    //console.log("enter uwu");
   };
   return (
     <>
       <h2 className="mb-3 text-2xl text-slate-800 font-bold">
-        Add GIF name to search
+        Add the GIF name to search for it{" "}
       </h2>
       <form onSubmit={searchGIF}>
         <input
@@ -34,7 +33,9 @@ const AddCategory = ({ setCategory }) => {
       {error ? (
         <p className="text-red-600">El campo no puede estar vacio</p>
       ) : (
-        <p className="mt-6 font-bold text-lg">Start searching for your favorite GIFs</p>
+        <p className="mt-6 font-bold text-lg">
+          Start searching for your favorite GIFs
+        </p>
       )}
     </>
   );
